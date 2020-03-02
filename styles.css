@@ -51,7 +51,8 @@ button {
 /* WRAPPER */
 
 .wrapper {
-    max-width: 80%;
+    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -158,16 +159,8 @@ header nav ul li a {
     border-radius: 5px;
 }
 
-.about a:hover {
-    color: #f2f2f2;
-    background-color: #215A6D;
-}
-
-.about a:focus {
-    color: #f2f2f2;
-    background-color: #215A6D;
-}
-
+.about a:hover,
+.about a:focus,
 .about a:active {
     color: #f2f2f2;
     background-color: #215A6D;
@@ -187,21 +180,15 @@ header nav ul li a {
     width: 50%;
 }
 
-.gallery-image-one {
-    float: left;
-}
-
-.gallery-row-one-text {
+.gallery-image-one,
+.gallery-row-one-text,
+.gallery-row-two-text {
     float: left;
 }
 
 .gallery-image-two {
     clear: left;
     float: right;
-}
-
-.gallery-row-two-text {
-    float: left;
 }
 
 .gallery-one-content h4,
@@ -230,33 +217,20 @@ header nav ul li a {
 }
 
 .gallery-one-content a:hover,
-.gallery-two-content a:hover {
-    color: #f2f2f2;
-    background-color: #215A6D;
-}
-
+.gallery-two-content a:hover,
 .gallery-one-content a:active,
-.gallery-two-content a:active {
-    color: #f2f2f2;
-    background-color: #215A6D;
-}
-
+.gallery-two-content a:active,
 .gallery-one-content a:focus,
 .gallery-two-content a:focus {
     color: #f2f2f2;
     background-color: #215A6D;
 }
 
-.gallery-one-content {
-    text-align: center;
-    padding-top: 12%;
-    padding-right: 20%;
-}
-
+.gallery-one-content,
 .gallery-two-content {
     text-align: center;
     padding-top: 12%;
-    padding-left: 20%;
+    padding-right: 20%;
 }
 
 /* MID PAGE NAV STYLES */
@@ -333,16 +307,8 @@ header nav ul li a {
     border-radius: 5px;
 }
 
-.about-me-content a:hover {
-    color: #f2f2f2;
-    background-color: #215A6D;
-}
-
-.about-me-content a:active {
-    color: #f2f2f2;
-    background-color: #215A6D;
-}
-
+.about-me-content a:hover,
+.about-me-content a:active,
 .about-me-content a:focus {
     color: #f2f2f2;
     background-color: #215A6D;
@@ -377,15 +343,11 @@ footer {
     padding: 5% 0;
 }
 
-.footer-newsletter{
+.footer-newsletter,
+.footer-links {
     float: left;
     width: 50%;
 }
-
-.footer-links {
-    width: 50%;
-    float: left;
-} 
 
 .footer-contact,
 .footer-pages,
@@ -464,16 +426,11 @@ footer nav li {
         display: none;
     }
 
-    .gallery-one-content {
-        text-align: center;
-        padding-top: 10%;
-        padding-right: 20%;
-    }
-    
+    .gallery-one-content,
     .gallery-two-content {
         text-align: center;
         padding-top: 10%;
-        padding-left: 20%;
+        padding-right: 20%;
     }
 
     .about-me-image {
@@ -514,21 +471,15 @@ footer nav li {
 }
 
 @media (max-width: 1100px) {
-    .gallery-one-content {
+    .gallery-one-content,
+    .gallery-two-content {
         text-align: center;
         padding-top: 7%;
         padding-right: 20%;
     }
-    
-    .gallery-two-content {
-        text-align: center;
-        padding-top: 7%;
-        padding-left: 20%;
-    }
 }
 
 @media (max-width: 950px) {
-
     .about {
         width: 80%;
     }
@@ -539,7 +490,6 @@ footer nav li {
     .gallery-image-two {
         width: 100%;
     }
-
 
     .gallery-one-content p,
     .gallery-two-content p {
